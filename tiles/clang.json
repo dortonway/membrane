@@ -1,0 +1,11 @@
+{
+  "title": "Clang compilation",
+  "description": "Clang /ˈklæŋ/[2] is a compiler front end for the C, C++, Objective-C and Objective-C++ programming languages. Chose a file with a source code",
+  "command": "clang {input} -o {output}",
+  "input_name": "Source code",
+  "output": {
+    "name": "Output dir",
+    "file": true
+  },
+  "execute_button_name": "Compile"
+}

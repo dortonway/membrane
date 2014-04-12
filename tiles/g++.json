@@ -1,0 +1,11 @@
+{
+  "title": "GCC C++ compilation",
+  "description": "The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Project supporting various programming languages. GCC is a key component of the GNU toolchain. Chose a file with a source code",
+  "command": "g++ {input} -o {output}",
+  "input_name": "Source code",
+  "output": {
+    "name": "Output dir",
+    "file": true
+  },
+  "execute_button_name": "Compile"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "membrane",
+  "main": "index.html",
+  "window": {
+    "toolbar": true,
+    "width": 900,
+    "height": 600
+  }
+}

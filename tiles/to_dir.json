@@ -1,0 +1,10 @@
+{
+  "title": "smth to folder",
+  "command": "g++ {input} -o {output}",
+  "input_name": "Source code",
+  "output": {
+    "name": "Output dir",
+    "file": false
+  },
+  "execute_button_name": "Compile"
+}

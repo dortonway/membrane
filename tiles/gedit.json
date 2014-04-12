@@ -1,0 +1,6 @@
+{
+  "title": "Gedit text editor",
+  "command": "gedit {input}",
+  "input_name": "File to open",
+  "execute_button_name": "Open file"
+}

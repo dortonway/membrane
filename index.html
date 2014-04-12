@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app = "app">
+  <head>
+    <title>membrane</title>
+    <link rel = "stylesheet" type = "text/css" href = "./style.css">
+  </head>
+  <body>
+    <span class = "menu">
+      <a href = "#" class = "hide_tiles">hide tiles</a>&nbsp;
+      <a href = "#" class = "clean_log">clean</a>&nbsp;
+      <a href = "#" class = "source" title = "Home page of the project: www.github.com">source</a>
+    </span>
+    <div ng-controller = "Tiles" class = "tiles">
+      <div ng-repeat = "tile in model.tiles" class = "tile" data-file_name = "{{tile.file_name}}">
+        <div ng-bind = "tile.title" class = "title"></div>
+        <div ng-bind = "tile.description" class = "description"></div>
+        <br>
+
+        <table>
+          <tr ng-if = "tile.input_name">
+            <td class = "path_name"><span ng-bind = "tile.input_name"></span>:</td>
+            <td>
+              <input type = "file" class = "input_file" onchange = "angular.element(this).scope().path.input_file(this)">
+              <span class = "input_box" ng-click = "input_click()">
+                <span ng-if = "tile.input_last_path">
+                  {{tile.input_last_path}}
+                </span>
+                <span ng-if = "!tile.input_last_path">
+                  choose a file
+                </span>
+              </span>
+            </td>
+          </tr>
+          <tr ng-if = "tile.output">
+            <td class = "path_name"><span ng-bind = "tile.output.name"></span>:</td>
+            <td><input type = "file" class = "output_dir" onchange = "angular.element(this).scope().path.output_file(this)" nwdirectory>
+            <span class = "input_box" ng-click = "input_click()">
+              <span ng-if = "tile.output_last_path">
+                {{tile.output_last_path}}
+              </span>
+              <span ng-if = "!tile.output_last_path">
+                choose a file
+              </span>
+            </span></td>
+          </tr>
+        </table>
+
+        <div class = "button"><button ng-bind = "tile.execute_button_name" ng-click = "run(event)"></button></div>
+      </div>
+    </div>
+
+    <div class = "log"><span class = "msg">stdout, stderr and notices</span><br><br></div>
+
+
+    <script src = "./jquery.js"></script>
+    <script src = "./angular.js"></script>
+    <script src = "./tiles_reader.js"></script>
+    <script src = "./app.js"></script>
+    <script src = "./ui.js"></script>
+  </body>
+</html>
