@@ -18,11 +18,11 @@ $.each(localStorage, function(key, val) {
   var there_is = false
   
   $.each(tiles_files, function(index, file) {
-    if(key.substr(-6) == ':input' && file == key.slice(0, -6)) {
+    if(file + ':input' == key) {
       there_is = true
       return
     }
-    else if(key.substr(-7) == ':output' && file == key.slice(0, -7)) {
+    else if(file + ':output' == key) {
       there_is = true
       return
     }
