@@ -1,8 +1,10 @@
 {
   "name": "membrane",
+  "homepage": "http://github.com/dortonway/membrane",
+  "author": "Ilia Pavlenkov <dortonway@gmail.com>",
   "main": "index.html",
   "window": {
-    "toolbar": true,
+    "toolbar": false,
     "width": 900,
     "height": 600
   }

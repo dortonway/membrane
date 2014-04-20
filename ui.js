@@ -21,6 +21,7 @@ hide_tiles_el.on('click', function() {
   }
 })
 
+
 $('.clean_log').on('click', function() {
   var log_el = $('.log')
   log_el.animate({'opacity': 0}, 300, function() {
@@ -29,6 +30,11 @@ $('.clean_log').on('click', function() {
   })
 })
 
-$('.source').on('click', function() {
-  require('open')('http://www.github.com')
+
+var homepage = require('./package.json').homepage,
+    source_el = $('.source')
+
+source_el.attr('title', 'Home page of the project: ' + homepage)
+source_el.on('click', function() {
+  require('open')(homepage)
 })
