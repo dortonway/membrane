@@ -1,0 +1,7 @@
+{
+  "title": "Load to module",
+  "description": "Module loader",
+  "command": "../labs_data/LoadToMod {input}",
+  "input_name": ".bin",
+  "execute_button_name": "Flash"
+}

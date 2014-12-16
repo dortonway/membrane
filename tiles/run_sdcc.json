@@ -1,0 +1,11 @@
+{
+  "title": "SDCC",
+  "description": "C compiler",
+  "command": "../labs_data/runSDCC {input} {output}",
+  "input_name": ".c",
+  "output": {
+    "name": "Output dir",
+    "file": false
+  },
+  "execute_button_name": "Compile"
+}
