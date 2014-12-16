@@ -85,7 +85,7 @@ angular.module('app', [])
       
       stdout && log('<span class = "stdout">stdout: ' + stdout.replace(/\n/g, '<br>') + '</span><br>')
       stderr && log('<span class = "stderr">stderr: ' + stderr.replace(/\n/g, '<br>') + '</span><br>')
-      stderr || log('<span class = "msg">completed successfully</span><br><br>')
+      stderr || log('<span class = "msg">успешно завершено</span><br><br>')
     })
   }
 

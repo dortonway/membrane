@@ -1,7 +1,7 @@
 {
   "title": "hexbin (binnf)",
-  "description": "hexbin  takes  the  text files specified in files (or standard input if none is specified) and converts them subject to the options  specified.",
+  "description": "",
   "command": "../labs_data/binnf {input}",
   "input_name": ".ihx",
-  "execute_button_name": "Run"
+  "execute_button_name": "выполнить"
 }

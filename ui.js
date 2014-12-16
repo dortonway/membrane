@@ -12,12 +12,12 @@ hide_tiles_el.on('click', function() {
     log_el.animate({'left': '0px'}, 200)
     tiles_el.animate({'width': 0, 'opacity': 0}, 200)
 
-    hide_tiles_el.text('show tiles')
+    hide_tiles_el.text('показать плитки')
   } else {
     log_el.animate({'left': log_left}, 200)
     tiles_el.animate({'width': tiles_width, 'opacity': 1}, 200)
 
-    hide_tiles_el.text('hide tiles')
+    hide_tiles_el.text('скрыть плитки')
   }
 })
 
