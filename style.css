@@ -34,6 +34,7 @@ body {
   font-size: 11pt;
   z-index: -1;
   padding-left: 5px;
+  padding-top: 30px;
   right: 0px;
   margin: 0px;
 }
@@ -47,15 +48,15 @@ body {
 }
 
 .msg {
-  color: #78b7ff;
+  color: #cbe0f8;
 }
 
 .time {
-  color: #496d8e;
+  color: #cbe0f8;
 }
 
 .to_exec {
-  color: #848248;
+  color: #d5d389;
 }
 
 .button {
@@ -80,8 +81,7 @@ button:hover {
   right: 20px;
   position: fixed;
   z-index: 0;
-  opacity: 0.5;
-  background-color: #95c7ff;
+  background-color: #cbe0f8;
   padding: 3px;
 }
 
