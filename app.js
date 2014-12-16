@@ -69,7 +69,7 @@ angular.module('app', [])
     if(tile.output) {
       var file = ''
       localStorage[tile.file_name + ':output'] && ( file = path.basename(input_file) + '.bin' )
-      output_file = localStorage[tile.file_name + ':output'] + '/' + file
+      output_file = localStorage[tile.file_name + ':output'] + '/' + (!!tile.output.file ? file : '')
     }
 
     var to_exec = replace(tile.command, {
