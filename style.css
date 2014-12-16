@@ -116,3 +116,32 @@ input[type = file] {
   color: #005cc4;
   text-decoration: underline;
 }
+
+.about {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #263441;
+  opacity: 0.9;
+  color: #ffffff;
+  padding-top: 10%;
+  display: none;
+  font-size: 11pt;
+}
+
+.close_about {
+  cursor: pointer;
+  font-size: 18pt;
+  margin-left: 100%;
+}
+
+.about .text {
+  width: 400px;
+  text-align: left;
+  margin-left: 30%;
+}
+
+.about .links {
+  color: #8bb8e2;
+  font-size: 10pt;
+}

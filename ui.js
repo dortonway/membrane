@@ -31,10 +31,5 @@ $('.clean_log').on('click', function() {
 })
 
 
-var homepage = require('./package.json').homepage,
-    source_el = $('.source')
-
-source_el.attr('title', 'Home page of the project: ' + homepage)
-source_el.on('click', function() {
-  require('open')(homepage)
-})
+$('.show_about').on('click', function() { $('.about').show() })
+$('.close_about').on('click', function() { $('.about').hide() })
