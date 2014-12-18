@@ -68,7 +68,9 @@ angular.module('app', [])
 
     if(tile.output) {
       var file = ''
-      localStorage[tile.file_name + ':output'] && ( file = path.basename(input_file) + '.bin' )
+      var file_extension = '.' + (tile.output.file_extension || 'mrn')
+      var file_without_extension = path.basename(input_file, path.extname(input_file))
+      localStorage[tile.file_name + ':output'] && ( file = file_without_extension + file_extension )
       output_file = localStorage[tile.file_name + ':output'] + '/' + (!!tile.output.file ? file : '')
     }
 
@@ -83,9 +85,9 @@ angular.module('app', [])
       log('<span class = "time">' + zero(date.getHours()) + ':' + zero(date.getMinutes()) + ':' + zero(date.getSeconds())
         + ': </span><span class = "to_exec">' + to_exec + '</span><br>')
       
-      stdout && log('<span class = "stdout">stdout: ' + stdout.replace(/\n/g, '<br>') + '</span><br>')
-      stderr && log('<span class = "stderr">stderr: ' + stderr.replace(/\n/g, '<br>') + '</span><br>')
-      stderr || log('<span class = "msg">completed successfully</span><br><br>')
+      stdout && log('<span class = "stdout">stdout: ' + stdout.replace(/\n/g, '<br>') + '</span>')
+      stderr && log('<span class = "stderr">stderr: ' + stderr.replace(/\n/g, '<br>') + '</span>')
+      log('<br>')
     })
   }
 

@@ -1,11 +1,12 @@
 {
   "title": "SDCC",
-  "description": "C compiler",
+  "description": "Компилятор C",
   "command": "../labs_data/runSDCC {input} {output}",
   "input_name": ".c",
   "output": {
-    "name": "Output dir",
-    "file": false
+    "name": "куда",
+    "file": false,
+    "file_extension": "ihx"
   },
-  "execute_button_name": "Compile"
+  "execute_button_name": "скомпилировать"
 }

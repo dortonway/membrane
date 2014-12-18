@@ -2,13 +2,14 @@
 <html ng-app = "app">
   <head>
     <title>membrane</title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <link rel = "stylesheet" type = "text/css" href = "./style.css">
   </head>
   <body>
     <span class = "menu">
-      <a href = "#" class = "hide_tiles">hide tiles</a>&nbsp;
-      <a href = "#" class = "clean_log">clean</a>&nbsp;
-      <a href = "#" class = "source">source</a>
+      <a href = "#" class = "hide_tiles">скрыть плитки</a>&nbsp;
+      <a href = "#" class = "clean_log">очистить</a>&nbsp;
+      <a href = "#" class = "show_about">о программе</a>
     </span>
     <div ng-controller = "Tiles" class = "tiles">
       <div ng-repeat = "tile in model.tiles" class = "tile" data-file_name = "{{tile.file_name}}">
@@ -26,7 +27,7 @@
                   {{tile.input_last_path}}
                 </span>
                 <span ng-if = "!tile.input_last_path">
-                  choose a file
+                  выбрать путь
                 </span>
               </span>
             </td>
@@ -39,7 +40,7 @@
                 {{tile.output_last_path}}
               </span>
               <span ng-if = "!tile.output_last_path">
-                choose a file
+                выбрать путь
               </span>
             </span></td>
           </tr>
@@ -49,7 +50,26 @@
       </div>
     </div>
 
-    <div class = "log"><span class = "msg">stdout, stderr and notices</span><br><br></div>
+    <div class = "log"><span class = "msg">stdout, stderr и замечания</span><br><br></div>
+
+    <div class = "about">
+      <div class = "text">
+        <span class= "close_about">✕</span>
+        <p>
+          Программа является настраиваемой оболочкой,
+          предназначенной для более удобной работы с утилитами,
+          используемыми в лаборатории схемотехники.
+        </p>
+
+        <p>Разработана в качестве курсового проекта студентом группы АС-11 - Павленковым И.Ю.</p>
+        <p>Используемые технологии: JavaScript, Node.js, node-webkit, Angular.js.</p>
+
+        <div class = "links">
+          <p>Исходный код: https://github.com/dortonway/membrane</p>
+          <p>E-mail для связи: yapavlenkov@gmail.com</p>
+        </div>
+      </div>
+    </div>
 
 
     <script src = "./jquery.js"></script>
