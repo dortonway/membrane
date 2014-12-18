@@ -1,7 +1,7 @@
 {
   "title": "Загрузка в модуль",
   "description": "Загрузка бинарного кода в модуль",
-  "command": "../labs_data/LoadToMod {input}",
+  "command": "sudo labs_data/loader {input}",
   "input_name": ".bin",
   "execute_button_name": "загрузить"
 }

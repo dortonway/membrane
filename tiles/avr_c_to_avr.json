@@ -1,7 +1,7 @@
 {
   "title": "AVR: код C в AVR",
   "description": "На основе исходного кода на C создать объектный файл, который странслировать в hex-файл и загрузить в модуль с микропроцессором atmega64",
-  "command": "nodejs ../labs_data/c_to_avr.js {input}",
+  "command": "nodejs labs_data/c_to_avr.js {input}",
   "input_name": ".c",
   "execute_button_name": "Загрузить"
 }

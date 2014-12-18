@@ -1,7 +1,7 @@
 {
   "title": "SDCC",
   "description": "Компилятор C",
-  "command": "../labs_data/runSDCC {input} {output}",
+  "command": "labs_data/run_sdcc {input} {output}",
   "input_name": ".c",
   "output": {
     "name": "куда",
