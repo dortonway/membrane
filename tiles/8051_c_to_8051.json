@@ -1,0 +1,7 @@
+{
+  "title": "8051: код C в 8051",
+  "description": "Загрузить в модуль с микропроцессором 8051",
+  "command": "nodejs labs_data/c_to_8051.js {input}",
+  "input_name": ".c",
+  "execute_button_name": "Загрузить"
+}
