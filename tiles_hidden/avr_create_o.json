@@ -1,6 +1,6 @@
 {
-  "title": "AVR CreateO",
-  "description": "Создать объектный файл",
+  "title": "AVR: создать объектный файл",
+  "description": "",
   "command": "avr-gcc -mmcu=atmega64 -I. -gdwarf-2 -DF_CPU=8000000UL -Os -o {output} {input}",
   "input_name": ".c",
   "output": {
