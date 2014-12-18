@@ -4,8 +4,9 @@
   "command": "../labs_data/runSDCC {input} {output}",
   "input_name": ".c",
   "output": {
-    "name": "Куда",
-    "file": false
+    "name": "куда",
+    "file": false,
+    "file_extension": "ihx"
   },
   "execute_button_name": "скомпилировать"
 }

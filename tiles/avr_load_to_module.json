@@ -1,0 +1,7 @@
+{
+  "title": "AVR загрузка в модуль",
+  "description": "Загрузить код в модуль с микропроцессором AVR. Пред загрузкой перевести модуль в режим записи (замок 1 в режим On).",
+  "command": "sudo ../labs_data/flasher -file={input}",
+  "input_name": ".hex",
+  "execute_button_name": "загрузить"
+}

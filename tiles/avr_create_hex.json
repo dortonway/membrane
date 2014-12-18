@@ -1,0 +1,12 @@
+{
+  "title": "AVR CreateHex",
+  "description": "Создать hex-файл",
+  "command": "avr-objcopy -O ihex {input} {output}",
+  "input_name": ".o",
+  "output": {
+    "name": "куда",
+    "file": true,
+    "file_extension": "hex"
+  },
+  "execute_button_name": "создать"
+}
