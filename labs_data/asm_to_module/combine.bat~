@@ -1,0 +1,5 @@
+mount c %1/labs_data/asm_to_module
+C:
+X8051.EXE -Q PR.ASM -ld
+LINK51.EXE -Q PR.LNK
+exit

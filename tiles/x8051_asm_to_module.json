@@ -1,0 +1,7 @@
+{
+  "title": "x8051: ассемблер в модуль с x8051",
+  "description": "Скомпилировать, слинковать и загрузить",
+  "command": "labs_data/asm_to_module/asm_to_module.sh {input}",
+  "input_name": ".ASM",
+  "execute_button_name": "загрузить"
+}
